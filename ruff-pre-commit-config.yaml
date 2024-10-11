@@ -1,0 +1,14 @@
+files: .*\.py
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: uvx ruff@latest check --fix
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff-format
+        entry: uvx ruff@latest format
+        language: system
+        types: [python]

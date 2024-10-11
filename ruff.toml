@@ -1,0 +1,19 @@
+[lint]
+# Default (Pyflakes [F] and a subset of pycodestyle [E]) plus isort (I), pydocstyle (D), and flake8-annotations (ANN)
+select = ["E4", "E7", "E9", "F", "I", "D", "ANN"]
+# Ignore deprecated flake8-annotations rules and do not require type annotations on *args and **kwargs
+ignore = ["ANN002", "ANN003", "ANN101", "ANN102"]
+task-tags = ["TODO", "FIXME", "XXX", "NOTE", "HACK"]
+
+[lint.flake8-annotations]
+allow-star-arg-any = true
+ignore-fully-untyped = true
+suppress-dummy-args = true
+suppress-none-returning = true
+
+[lint.per-file-ignores]
+# Ignore import related violations in __init__.py files
+"__init__.py" = ["E402", "F401", "F403"]
+
+[lint.pydocstyle]
+convention = "pep257"
