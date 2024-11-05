@@ -17,7 +17,8 @@ The directory these steps are run in does not matter.
   * No Python virtual environment can be activated when running this command. Make sure the current directory is not
     within any code repo that auto-activates a virtual environment, or deactivate the environment first.
 * `curl -o "$HOME/.ruff.toml" "https://raw.githubusercontent.com/Teamworksapp/ruff-config/refs/heads/main/ruff.toml"`
-* `curl -o "$HOME/.ruff-pre-commit-config.yaml" "https://raw.githubusercontent.com/Teamworksapp/ruff-config/refs/heads/main/ruff-pre-commit-config.yaml"`
+* `curl -o "$HOME/.ruff.sh" "https://raw.githubusercontent.com/Teamworksapp/ruff-config/refs/heads/main/ruff.sh"`
+* `chmod +x "$HOME/.ruff.sh"`
 * uv tool install ruff@latest
 
 ## How It All Works
