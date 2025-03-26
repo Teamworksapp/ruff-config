@@ -11,7 +11,7 @@ When ruff.toml or the pre-commit ruff commands need to be changed, this is the o
 
 The directory these steps are run in does not matter.
 
-* brew install uv
+* `brew install uv`
 * `pip install pre-commit`
   * Run this command for the system pip.
   * No Python virtual environment can be activated when running this command. Make sure the current directory is not
@@ -19,8 +19,7 @@ The directory these steps are run in does not matter.
 * `curl -o "$HOME/.ruff.toml" "https://raw.githubusercontent.com/Teamworksapp/ruff-config/refs/heads/main/ruff.toml"`
 * `curl -o "$HOME/.ruff.sh" "https://raw.githubusercontent.com/Teamworksapp/ruff-config/refs/heads/main/ruff.sh"`
 * `chmod +x "$HOME/.ruff.sh"`
-* uv tool install ruff@latest
-
+  
 ## How It All Works
 
 * The latest ruff.toml file lives in this repo.
