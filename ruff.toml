@@ -16,6 +16,8 @@ suppress-none-returning = true
 [lint.per-file-ignores]
 # Ignore import related violations in __init__.py files
 "__init__.py" = ["E402", "F401", "F403"]
+# Ignore unused imports in alembic env.py files
+"env.py" = ["F401"]
 
 [lint.pydocstyle]
 convention = "pep257"
