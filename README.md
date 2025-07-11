@@ -1,5 +1,7 @@
 # ruff-config
 
+**This repository now also contains a shared `.coderabbit.yaml` configuration used by Hub and Hub adjacent GitLab repositories.**
+
 This repo exists to keep a common ruff configuration for all Python repos.
 
 The ruff version is managed by the system rather than individual repos (via uvx, using the latest ruff version, in
