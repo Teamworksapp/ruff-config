@@ -52,7 +52,7 @@ reviews:
     shellcheck:
       enabled: true
     ruff:
-      enabled: true
+      enabled: false
     markdownlint:
       enabled: true
     github-checks:
