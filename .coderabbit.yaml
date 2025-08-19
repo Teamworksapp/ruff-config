@@ -27,7 +27,10 @@ reviews:
   auto_assign_reviewers: false
   poem: false
   labeling_instructions: []
-  path_filters: []
+  path_filters:
+    - !*.bru
+    - !*.env
+    - !bruno.json
   path_instructions: []
   abort_on_close: true
   disable_cache: false
