@@ -78,8 +78,6 @@ knowledge_base:
     team_keys: []
   pull_requests:
     scope: auto
-  mcp:
-    scope: auto
 code_generation:
   docstrings:
     language: en-US
